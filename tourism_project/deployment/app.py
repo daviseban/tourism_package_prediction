@@ -38,11 +38,11 @@ duration_of_pitch = st.number_input("Duration of Pitch (minutes)", min_value=0, 
 # Assemble input into DataFrame
 input_data = pd.DataFrame([{
     'Age': age,
-    'TypeofContract': typeof_contact,
+    'TypeofContact': typeof_contact,
     'CityTier': city_tier,
     'Occupation': occupation,
     'Gender': gender,
-    'NumberofPersonVisiting': number_of_person_visiting,
+    'NumberOfPersonVisiting': number_of_person_visiting,
     'PreferredPropertyStar': preferred_property_star,
     'MaritalStatus': marital_status,
     'NumberOfTrips': number_of_trips,
@@ -54,7 +54,7 @@ input_data = pd.DataFrame([{
     'PitchSatisfactionScore': pitch_satisfaction_score,
     'ProductPitched': product_pitched,
     'DurationOfPitch': duration_of_pitch,
-
+    'NumberOfFollowups': number_of_followups
 }])
 
 # Predict button

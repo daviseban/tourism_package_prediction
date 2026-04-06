@@ -61,4 +61,9 @@ input_data = pd.DataFrame([{
 if st.button("Predict Package Adoption"):
     prediction = model.predict(input_data)[0]
     st.subheader("Prediction Result:")
-    st.success(f"Predicted adoption: **${prediction} **")
+
+    # Map numeric prediction to a descriptive sentence
+    if prediction == 1:
+        st.success("✅ The customer is likely to adopt the tourism package.")
+    else:
+        st.warning("❌ The customer is unlikely to adopt the tourism package.")

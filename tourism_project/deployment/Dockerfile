@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Install Python dependencies listed in requirements.txt
-RUN pip3 install -r requirements.txt
+RUN pip3 install -r tourism_project/requirements.txt
 
 RUN useradd -m -u 1000 user
 USER user
